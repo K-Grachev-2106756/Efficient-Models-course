@@ -1,0 +1,8 @@
+# Python 3.11. CUDA wheel index is required: the +cu128 build is not on PyPI.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.8.0+cu128
+numpy==2.4.4
+scipy==1.16.1
+matplotlib==3.10.8
+nvidia-ml-py==13.595.45

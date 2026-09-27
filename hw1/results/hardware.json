@@ -1,0 +1,46 @@
+{
+  "gpu_name": "NVIDIA GeForce RTX 5080",
+  "gpu_memory_bytes": 17094475776,
+  "compute_capability": "12.0",
+  "driver": "610.88",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "python": "3.11.15",
+  "numpy": "2.4.4",
+  "seed": 0,
+  "base_S": [
+    32,
+    64,
+    128,
+    224,
+    256,
+    384,
+    512
+  ],
+  "base_B": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "extra_S": [
+    176,
+    288,
+    336,
+    400
+  ],
+  "extra_B": [
+    9,
+    50,
+    209
+  ],
+  "cudnn_benchmark": false,
+  "allow_tf32": false,
+  "dtype": "fp32",
+  "mode": "eval + inference_mode"
+}

@@ -1,0 +1,230 @@
+[
+  {
+    "S": 32,
+    "B": 1,
+    "wall_median_s": 0.00033973599965975154,
+    "cuda_event_median_s": 0.00030433599650859833,
+    "kernel_count": 13,
+    "top_kernels": [
+      {
+        "name": "aten::cudnn_convolution",
+        "device_us": 162
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 117
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 36
+      },
+      {
+        "name": "void precomputed_convolve_sgemm<float, 1024, 5, 5, 4, 3, 3, 1, false>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, float const*, float const*, int*)",
+        "device_us": 8
+      },
+      {
+        "name": "Activity Buffer Request",
+        "device_us": 7
+      },
+      {
+        "name": "aten::clamp_min_",
+        "device_us": 6
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "device_us": 6
+      },
+      {
+        "name": "aten::addmm",
+        "device_us": 4
+      },
+      {
+        "name": "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, float, float, float, float, false, true, true, false, 7, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float const>, cublasGemvTensorStridedBatched<float>, float>)",
+        "device_us": 4
+      },
+      {
+        "name": "aten::max_pool2d_with_indices",
+        "device_us": 1
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::max_pool_forward_nchw<float>(int, float const*, long, long, long, int, int, int, int, int, int, int, int, int, int, float*, long*)",
+        "device_us": 1
+      },
+      {
+        "name": "aten::mean",
+        "device_us": 1
+      }
+    ]
+  },
+  {
+    "S": 224,
+    "B": 16,
+    "wall_median_s": 0.0012050229988744832,
+    "cuda_event_median_s": 0.0011280000209808348,
+    "kernel_count": 16,
+    "top_kernels": [
+      {
+        "name": "aten::cudnn_convolution",
+        "device_us": 1490
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 743
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 282
+      },
+      {
+        "name": "void precomputed_convolve_sgemm<float, 1024, 5, 5, 4, 3, 3, 1, false>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, float const*, float const*, int*)",
+        "device_us": 232
+      },
+      {
+        "name": "Activity Buffer Request",
+        "device_us": 116
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 116
+      },
+      {
+        "name": "void precomputed_convolve_sgemm<float, 512, 6, 8, 3, 3, 5, 1, false>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, float const*, float const*, int*)",
+        "device_us": 112
+      },
+      {
+        "name": "aten::clamp_min_",
+        "device_us": 40
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "device_us": 40
+      },
+      {
+        "name": "aten::max_pool2d_with_indices",
+        "device_us": 27
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::max_pool_forward_nchw<float>(int, float const*, long, long, long, int, int, int, int, int, int, int, int, int, int, float*, long*)",
+        "device_us": 27
+      },
+      {
+        "name": "aten::addmm",
+        "device_us": 9
+      }
+    ]
+  },
+  {
+    "S": 512,
+    "B": 64,
+    "wall_median_s": 0.020336603000032483,
+    "cuda_event_median_s": 0.01962235164642334,
+    "kernel_count": 16,
+    "top_kernels": [
+      {
+        "name": "aten::cudnn_convolution",
+        "device_us": 15621
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 5940
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 5215
+      },
+      {
+        "name": "aten::clamp_min_",
+        "device_us": 3397
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "device_us": 3397
+      },
+      {
+        "name": "Activity Buffer Request",
+        "device_us": 2639
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 2639
+      },
+      {
+        "name": "void precomputed_convolve_sgemm<float, 512, 6, 8, 3, 3, 5, 1, false>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, float const*, float const*, int*)",
+        "device_us": 1824
+      },
+      {
+        "name": "aten::max_pool2d_with_indices",
+        "device_us": 1169
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::max_pool_forward_nchw<float>(int, float const*, long, long, long, int, int, int, int, int, int, int, int, int, int, float*, long*)",
+        "device_us": 1169
+      },
+      {
+        "name": "aten::mean",
+        "device_us": 129
+      },
+      {
+        "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        "device_us": 129
+      }
+    ]
+  },
+  {
+    "S": 512,
+    "B": 128,
+    "wall_median_s": 0.04016543099987757,
+    "cuda_event_median_s": 0.0388676643371582,
+    "kernel_count": 16,
+    "top_kernels": [
+      {
+        "name": "aten::cudnn_convolution",
+        "device_us": 30154
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 11985
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 9923
+      },
+      {
+        "name": "aten::clamp_min_",
+        "device_us": 7212
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "device_us": 7212
+      },
+      {
+        "name": "Activity Buffer Request",
+        "device_us": 4972
+      },
+      {
+        "name": "void implicit_convolve_sgemm<float, float, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, float const*, float const*, bool, bool, int, int)",
+        "device_us": 4972
+      },
+      {
+        "name": "void precomputed_convolve_sgemm<float, 512, 6, 8, 3, 3, 5, 1, false>(int, int, int, float const*, int, float*, float const*, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, float const*, float const*, int*)",
+        "device_us": 3272
+      },
+      {
+        "name": "aten::max_pool2d_with_indices",
+        "device_us": 2353
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::max_pool_forward_nchw<float>(int, float const*, long, long, long, int, int, int, int, int, int, int, int, int, int, float*, long*)",
+        "device_us": 2353
+      },
+      {
+        "name": "aten::mean",
+        "device_us": 294
+      },
+      {
+        "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        "device_us": 294
+      }
+    ]
+  }
+]

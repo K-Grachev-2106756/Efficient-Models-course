@@ -1,0 +1,67 @@
+{
+  "fit": "non-negative least squares, weight 1/y, train = base grid only",
+  "latency": {
+    "t0_s": 0.0002817894156428918,
+    "t_flop_s": 0.0,
+    "t_byte_s": 5.810376467836167e-12,
+    "train": {
+      "n": 63,
+      "mape": 0.18302384328449856,
+      "median_ape": 0.11939672071498277
+    },
+    "validation": {
+      "n": 69,
+      "mape": 0.16352105991559934,
+      "median_ape": 0.16635101005316633
+    },
+    "regimes_on_measured_points": {
+      "launch": {
+        "n": 38,
+        "mape": 0.28610347568444977,
+        "median_ape": 0.26019077956369585
+      },
+      "compute": {
+        "n": 0,
+        "mape": null,
+        "median_ape": null
+      },
+      "memory": {
+        "n": 94,
+        "mape": 0.12703748069245402,
+        "median_ape": 0.11682393692496576
+      }
+    }
+  },
+  "energy": {
+    "e0_j": 0.012964651183526512,
+    "e_flop_j": 0.0,
+    "e_byte_j": 1.9267655384803583e-09,
+    "train": {
+      "n": 63,
+      "mape": 0.18480105848192285,
+      "median_ape": 0.1431901888480131
+    },
+    "validation": {
+      "n": 69,
+      "mape": 0.15702022044767547,
+      "median_ape": 0.14465122580776504
+    }
+  },
+  "memory": {
+    "train": {
+      "n": 63,
+      "mape": 0.4174463688009027,
+      "median_ape": 0.4044117359547047
+    },
+    "validation": {
+      "n": 69,
+      "mape": 0.3504855889480087,
+      "median_ape": 0.3141276012742023
+    },
+    "median_ratio_measured_over_predicted": 1.53083609442737,
+    "max_ratio_measured_over_predicted": 3.261483092832819,
+    "oom_measured": 0,
+    "oom_predicted_from_capacity": 0,
+    "gpu_memory_bytes": 17094475776
+  }
+}

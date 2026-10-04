@@ -1,0 +1,11 @@
+# Interpreter for this homework: /home/pc-01/prj/venv
+# Python 3.11.15. Do not pip-install this file over that environment.
+#
+# torch==2.8.0
+# triton==3.4.0
+# matplotlib==3.10.8
+# numpy==2.4.4
+#
+# cut-cross-entropy is not a pip dependency. It is the git submodule
+# hw2/ml-cross-entropy (apple/ml-cross-entropy @ 3de376c106a1916bc5e1b619f9c77c87a461ee1c).
+# benchmark_loss.py puts that checkout on sys.path.
